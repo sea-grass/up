@@ -15,9 +15,9 @@
     "sveltify": "^3.0.0"
   },
   "scripts": {
-    "build": "browserify -p esmify -t [ sveltify --extensions [.svelte] ] src/index.js -o public/app.js",
-    "watch": "watchify -p esmify -t [ sveltify --extensions [.svelte] ] src/index.js -o public/app.js",
-    "server": "browser-sync start --cwd public --watch --files '*.js,*.html,*.svelte' --ss public",
+    "build": "browserify -p esmify -t [ sveltify --extensions [.svelte] ] src/index.js -o docs/app.js",
+    "watch": "watchify -p esmify -t [ sveltify --extensions [.svelte] ] src/index.js -o docs/app.js",
+    "server": "browser-sync start --cwd docs --watch --files '*.js,*.html,*.svelte' --ss docs",
     "dev": "npm-run-all -p watch server"
   },
   "devDependencies": {
